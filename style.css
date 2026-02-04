@@ -1,0 +1,768 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/*POLICES DE CARACTÈRES*/
+.rampart-one-regular {
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alex-brush-regular {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body {
+    background-color: rgb(237, 192, 199);
+    scroll-behavior: smooth;
+}
+
+
+/*DÉBUT DE PAGE*/
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 4vw;
+    z-index: 999;
+    background-color: #4b4b4b5b;
+    backdrop-filter: blur(1vh);
+}
+
+.entete-gauche img {
+    width: 3.75em;
+    height: 3.75em;
+    margin-right: 1.25em;
+}
+
+.bouton-entete {
+    width: 5.75em;
+    padding: 0.5em;
+    position: relative;
+    top: -1.5em;
+    background-color: white;
+    border-color: white;
+    border-radius: 2em;
+    
+}
+.bouton-entete a {
+color: #660033;
+text-decoration: none;
+font-weight: 600;
+
+}
+
+
+
+
+.entete-droite {
+    display: flex;
+}
+
+.entete-droite a {
+    text-decoration: none;
+    padding-left: 4vh;
+    color: white;
+    font-size: 3vh;
+}
+
+a:hover {
+    color: #660033;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image1-conteneur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-info {
+    z-index: 1;
+    position: relative;
+    top: 5em;
+    left: 3.125em;
+}
+
+
+.hero-info h1 {
+    font-size: 15.6vh;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 15.6vh;
+    margin-bottom: 26vh;
+    color: #660033;
+}
+
+.hero-info p {
+    color: white;
+    max-width: 18.75em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 20;
+    font-size: 1.25em;
+    background-color: rgb(240, 199, 206);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+/* RUBRIQUE LE JEU */
+
+.section-leJeu {
+    width: 100%;
+    height: 100%;
+    margin-top: 12.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-leJeu h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 13vh;
+    max-width: 112.3vw;
+    text-align: center;
+    margin: 3.3vh 0;
+    text-transform: uppercase;
+    background: linear-gradient(to right, white, lightpink, #660033);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.image-box {
+    width: 35.2vw;
+    height: 66.4vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4.9vw;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*PARTIE CARTES POUR RUBRIQUE JEU*/
+.carte-section {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 13vh 0;
+
+}
+
+.titre-cartes {
+    text-align: center;
+    font-size: 8em;
+    color: #660033;
+    text-shadow: white 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    margin-top: 0em;
+}
+
+.zone-cartes {
+    position: relative;
+    width: 100%;
+    max-width: 75em;
+    height: 43.75em;
+    margin: 0 auto;
+}
+
+
+.image-centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 650px;
+    z-index: 100;
+}
+
+.carte-section h2 {
+    color: #bd1e6d;
+    font-style: italic;
+    /*code pris sur https://html-css-js.com/css/generator/text-shadow/ */
+    text-shadow: #efefe9 2px 2px 0px, #9C9C9C 4px 4px 0px;
+}
+
+
+.carte0 {
+    background-color: beige;
+    max-width: 30%;
+    padding: 1em;
+    margin: auto;
+    transform: rotate(2deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    z-index: 101;
+
+}
+
+.carte1 {
+    position: relative;
+    background-color: white;
+    max-width: 30%;
+    padding: 1em;
+    transform: rotate(-5deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    z-index: 101;
+}
+
+.carte2 {
+    background-color: beige;
+    position: relative;
+    max-width: 30%;
+    padding: 1em;
+    right: -2em;
+    transform: rotate(5deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carte3 {
+    position: relative;
+    top: -8.125em;
+    background-color: rgb(251, 242, 244);
+    max-width: 30%;
+    padding: 1em;
+    transform: rotate(-5deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+
+.carte4 {
+    position: relative;
+    max-width: 30%;
+    padding: 1em;
+    right: -52em;
+    top: -56em;
+    transform: rotate(3deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-color: #660033;
+    border-width: 1%;
+
+}
+
+.carte5 {
+    background-color: rgb(246, 223, 227);
+    position: relative;
+    max-width: 30%;
+    padding: 1em;
+    right: -52em;
+    top: -57em;
+    transform: rotate(-3deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    z-index: 101;
+}
+
+
+
+.carte0:hover {
+    transform: rotate(0deg);
+    transition: transform 500ms;
+}
+
+.carte1:hover {
+    transform: rotate(0deg);
+    transition-duration: 500ms;
+    z-index: 101;
+}
+
+.carte2:hover {
+    transform: rotate(0deg);
+    z-index: 101;
+    transition-duration: 500ms;
+}
+
+.carte3:hover {
+    transform: rotate(0deg);
+    transition-duration: 500ms;
+}
+
+.carte4:hover {
+    transform: rotate(0deg);
+    transition-duration: 500ms;
+}
+
+.carte5:hover {
+    transform: rotate(0deg);
+    z-index: 102;
+    transition-duration: 500ms;
+}
+
+
+/*RUBRIQUE MON MONDE*/
+
+
+.info-section>h1 {
+    font-size: 8em;
+    color: #660033;
+    text-shadow: white 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0;
+
+}
+
+.info-section>p {
+    font-size: 125%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.liste-images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.liste-images img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.taille-image2 {
+    flex: 0 0 65%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.taille-image2:hover {
+    box-shadow: 0 0 15px white;
+}
+
+.card p {
+    color: black;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    ;
+    margin: 0;
+    padding: 1em;
+    font-weight: 600;
+}
+
+.card h2 {
+    font-size: 2em;
+    color: #bd1e6d;
+    font-style: italic;
+    /*code pris sur https://html-css-js.com/css/generator/text-shadow/ */
+    text-shadow: #efefe9 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.modal-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #660033;
+    width: 90%;
+    height: 90%;
+    position: relative;
+
+}
+
+.modal img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.modal button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: #e52c2c;
+    border-color: #e52c2c;
+    height: 3em;
+}
+
+.modal button:hover {
+    cursor: pointer;
+}
+
+
+.tooltip {
+    color: black;
+    font-size: 18px;
+    max-width: 28ch;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Code pris en ligne sur https://css-shape.com/ */
+
+.tooltip {
+    /* triangle dimension */
+    --b: 2em;
+    /* base */
+    --h: 1em;
+    /* height */
+
+    --p: 50%;
+    /* triangle position (0%:top 100%:bottom) */
+    --r: 1.2em;
+    /* the radius */
+    --c: white;
+
+    padding: 1em;
+    border-radius: var(--r)/var(--r) min(var(--r), var(--p) - var(--b)/2) min(var(--r), 100% - var(--p) - var(--b)/2) var(--r);
+    clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0,
+            100% max(0%, var(--p) - var(--b)/2),
+            calc(100% + var(--h)) var(--p),
+            100% min(100%, var(--p) + var(--b)/2));
+    background: var(--c);
+  border-image: conic-gradient(var(--c) 0 0) fill 0/ calc(var(--p) - var(--b)/2) 0 calc(100% - var(--p) - var(--b)/2) var(--r)/ 0 var(--h) 0 0;
+    position:relative;
+    right: -73em;
+    top: -3em;
+
+}
+
+
+/*FORMULAIRE*/
+.titre-formulaire {
+    font-size: 6em;
+    color: #660033;
+    text-shadow: white 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    text-align: center;
+}
+
+
+.p-introduction {
+    position: relative;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 80%;
+    margin-bottom: 1.5em;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    background-color: #ffffff;
+    padding: 2.5em 2em;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #ff66b2; 
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sous-titres-formulaire {
+    margin-top: 0.3em;
+    font-size: 0.85em;
+    color: #5b5757;
+}
+
+.star-required {
+    color: #cd0000;
+}
+
+.formulaire-espace {
+    margin: 2em 0;
+}
+
+form>label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=url],
+form textarea {
+    width: 100%;
+    padding: 0.6em 0.8em;
+    margin-bottom: 1.2em;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=url]:focus,
+form textarea:focus {
+    border-color: #ff66b2;
+    box-shadow: 0 0 8px rgba(255,102,178,0.3);
+    outline: none;
+}
+
+form input[type=button],
+form button {
+    font-size: 1.1em;
+    padding: 0.8em 2em;
+    border-radius: 12px;
+    background-color: #ff66b2;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form input[type=button]:hover,
+form button:hover {
+    background-color: #ff4da6;
+    transform: translateY(-2px);
+}
+
+input.error, textarea.error {
+    border: 1.5px solid #e52c2c;
+}
+
+input.valid, textarea:required:valid {
+    border: 1.5px solid #1a961a;
+}
+
+form:hover {
+    box-shadow: 0 12px 25px rgba(255,102,178,0.3);
+}
+
+#confirmation {
+  display: none;
+  max-width: 450px;
+  margin: 80px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #e8fff0, #d2fbe2);
+  border-radius: 20px;
+  border: 1px solid #b9f0cf;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+#confirmation h2 {
+  color: #2e8b57;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+#confirmation a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #2e8b57;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+#confirmation a:hover {
+  background: #246e45;
+  transform: scale(1.05);
+}
+
+
+/*ZONE APRÈS FORMULAIRE*/
+
+.espace-final {
+    position: relative;
+    width: 100%;
+    margin-top:  6.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:  6.25em;
+}
+
+
+.espace-final h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4.375em;
+    max-width: 34.375em;
+    text-align: center;
+    background: linear-gradient(to right, white, lightpink, #660033);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+    max-width: 36vw;
+}
+
+
+/*ZONE FOOTER*/
+
+.footer {
+    background-color: white;
+    width: 100%;       
+    margin: 0em;         
+    padding: 1em; 
+}
+
+.footer p {
+    margin: 0 1.25em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(76, 72, 72);
+}
+
+footer ul.vertical {
+    display: block;      
+    list-style: disc;    
+    margin-left: 2em;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(76, 72, 72);
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    margin-right: 8.75em;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: #660033;
+    padding: 0.5%;
+    margin: 1%;
+    width: 100%;
+}
+
+.bx.bxl-linkedin-square{
+   font-size: 2.5rem; 
+    color: #0077b5; 
+    text-decoration: none;
+}
+
+footer h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*BLUR EFFECT ANIMATION*/
+
+.autoBlur {
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+
+}
+
+@keyframes autoBlurAnimation {
+    0% {
+        filter: blur(40px);
+    }
+
+    40%,
+    60% {
+        filter: blur(0);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        filter: blur(40px);
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+/*TAKE FULL SCREEN ANIMATION*/
+
+.autoTakeFull {
+    animation: autoTakeFullAnimation both;
+    animation-timeline: view(70% 65%);
+}
+
+@keyframes autoTakeFullAnimation {
+    to {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        margin-bottom: 100px;
+    }
+}
+
+/*AUTO DISPLAY ANIMATION*/
+
+.autoDisplay {
+    animation: autoDisplayAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoDisplayAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
