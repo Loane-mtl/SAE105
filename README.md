@@ -18,4 +18,9 @@ Le site est accessible à l'adresse suivante : http://martinel.projetsmmichamps.
 - Dans la barre du navigateur, écrire : http://localhost/SAE-105-TPA-Loane-Martinel/
 - Le site s'affichera. 
 
+## Remarques 
 
+Il s'agit de mon premier site web. 
+- Des fautes et imperfections peuvent encore être présentes.
+- Le rendu est actuellement optimisé pour Google Chrome.
+- Des corrections et améliorations seront apportées progressivement.
